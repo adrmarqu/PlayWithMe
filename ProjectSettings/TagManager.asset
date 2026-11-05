@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LeftCurve
+  - CarMarker
+  - CarMarkerNorm
+  - NormalTrack
+  - Mug
+  - DestructibleObjects
+  - Pusheable
+  - Scissor
+  - TriggerBed
+  - Wardrobe
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Destructor
+  - Water
+  - UI
+  - Floor
+  - Library
+  - Cases
+  - CaseColliders
+  - Player
+  - Rope
+  - Walls
+  - ScrewDetection
+  - Screw
+  - BucketDetector
+  - Bucket
+  - Liquid
+  - DetectionLiquid
+  - Scissor
+  - DetectionScissors
+  - BookWall
+  - Controllers
+  - Phone
+  - Cup
+  - RayXCamera
+  - WardrobeWall
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
