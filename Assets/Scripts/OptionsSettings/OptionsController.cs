@@ -19,7 +19,7 @@ public class OptionsController : MonoBehaviour
     void Start()
     {
         sliderValue = 0;
-        slider.value = PlayerPrefs.GetFloat("volumenAudio", 0.5f);
+        slider.value = PlayerPrefs.GetFloat("volumeAudio", 0.5f);
         AudioListener.volume = slider.value;
 
         if(Screen.fullScreen)
@@ -66,6 +66,11 @@ public class OptionsController : MonoBehaviour
 
     public void ChangeResolution(int indexResolution)
     {
+        if (resolutions == null || indexResolution < 0 || indexResolution >= resolutions.Length)
+        {
+            return;
+        }
+
         PlayerPrefs.SetInt("numeroResolucion", resolutionsDropDown.value);
         Resolution resolution = resolutions[indexResolution];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
